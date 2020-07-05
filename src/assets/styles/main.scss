@@ -1,0 +1,17 @@
+@import './../../../node_modules/slick-carousel/slick/slick.css';
+@import './../../../node_modules/slick-carousel/slick/slick-theme.css';
+@import './../../../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+@import './layout/_reset.scss';
+@import './layout/_variable.scss';
+@import './layout/_base.scss';
+@import './layout/_other.scss';
+
+
+@import './section/_index.scss';
+@import './section/_popup.scss';
+@import './section/_single-card.scss';
+@import './section/_contact.scss';
+@import './section/_work-principles.scss';
+@import './section/_catalog.scss';
+@import './section/_about-us.scss';

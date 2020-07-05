@@ -1,0 +1,35 @@
+.wrapper {
+	width: 100%;
+	max-width: 1220px;
+	margin: 0 auto;
+	@media (max-width: 1440px) {
+		max-width: 960px;
+	}
+	@media (max-width: 992px) {
+		max-width: calc(739px-10px);
+	}
+	@media (max-width: 768px) {
+		max-width: calc(577px-20px);
+	}
+	@media (max-width: 576px) {
+		max-width: 386px;
+	}
+	@media (max-width: 400px) {
+		width: calc(100%-20px);
+	}
+}
+
+a {
+	color: #202020;
+}
+
+body {
+  line-height: 1;
+  color: #202020;
+  font-style: normal;
+  @include Montserrat_font();
+}
+
+input {
+	@include Montserrat_font();
+}
