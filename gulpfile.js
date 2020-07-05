@@ -5,7 +5,6 @@ const rename = require('gulp-rename');
 const del = require('del');
 const gulpWebpack = require('gulp-webpack');
 const webpack = require('webpack');
-const webpackConfig = require('./webpack.config.js');
 const browserSync = require('browser-sync').create();
 
 const paths = {
@@ -27,9 +26,9 @@ const paths = {
         src: './src/assets/fonts/*.{otf,eot,ttf,woff,woff2,svg}',
         dest: './production/assets/fonts'
     },
-    images: {
-        src: './src/assets/images/**/*.{png,jpg,jpeg,gif,svg}',
-        dest: './production/assets/images/'
+    img: {
+        src: './src/assets/img/**/*.{png,jpg,jpeg,gif,svg}',
+        dest: './production/assets/img/'
     }
 }
 
@@ -39,7 +38,7 @@ function watch() {
     gulp.watch(paths.templates.src, templates);
     gulp.watch(paths.scripts.src, scripts);
     gulp.watch(paths.fonts.src, fonts);
-    gulp.watch(paths.images.src, images);
+    gulp.watch(paths.img.src, img);
 }
 
 // следим за build и релоадим браузер
@@ -74,7 +73,6 @@ function styles() {
 // webpack
 function scripts() {
     return gulp.src(paths.scripts.src)
-        .pipe(gulpWebpack(webpackConfig, webpack))
         .pipe(gulp.dest(paths.scripts.dest));
 }
 
@@ -83,20 +81,20 @@ function fonts() {
         .pipe(gulp.dest(paths.fonts.dest))
 }
 
-function images() {
-    return gulp.src(paths.images.src)
-        .pipe(gulp.dest(paths.images.dest))
+function img() {
+    return gulp.src(paths.img.src)
+        .pipe(gulp.dest(paths.img.dest))
 }
 
 exports.templates = templates;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.fonts = fonts;
-exports.images = images;
+exports.img = img;
 exports.clean = clean;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, templates, scripts, images, fonts),
+    gulp.parallel(styles, templates, scripts, img, fonts),
     gulp.parallel(watch, server)
 ));

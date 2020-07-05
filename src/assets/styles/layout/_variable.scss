@@ -3,3 +3,17 @@
 @mixin Montserrat_font(){
 	font-family: 'Montserrat', sans-serif;
 }
+
+@mixin AntiqueTrady_font(){
+	font-family: 'AntiqueTrady', sans-serif;
+}
+
+//fonts
+
+@font-face {
+	font-family: 'AntiqueTrady';
+	src:url('../fonts/a_AntiqueTradyNr.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="2 2 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f4443f;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Прямоугольник_12" data-name="Прямоугольник 12" class="cls-1" width="104" height="104"/>
+  <path id="Многоугольник_1" data-name="Многоугольник 1" class="cls-2" d="M58.289,51.574l-12.8,7.39V44.184Z"/>
+</svg>
