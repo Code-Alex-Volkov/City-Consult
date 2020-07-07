@@ -52,6 +52,37 @@ $(document).ready(function(){
 	}
 
 	/* slider one */
+	if ($('.slider_lorem').length) {
+		$('.slider_lorem').slick({
+		  infinite: true,
+		  centerMode: true,
+		  slidesToShow: 5,
+		  slidesToScroll: 1,
+		  appendArrows: $('.lorem_navigation'),
+		  prevArrow: "<div class=\"left\"><span class=\"one\"></span><span class=\"two\"></span></div>",
+		  nextArrow: "<div class=\"right\"><span class=\"one\"></span><span class=\"two\"></span></div>",
+		  responsive: [
+			  	{
+			  		breakpoint: 993,
+			  		settings: {
+			  			slidesToShow: 2,
+			  			slidesToScroll: 1
+			  		}
+			  	},
+			  	{
+			  		breakpoint: 577,
+			  		settings: {
+			  			slidesToShow: 1,
+			  			slidesToScroll: 1,
+			  			dots: true,
+			  			arrows: false
+			  		}
+			  	}
+		  ]
+		});
+	}
+
+	/* slider two */
 	if ($('.slider_trust').length) {
 		$('.slider_trust').slick({
 		  infinite: true,

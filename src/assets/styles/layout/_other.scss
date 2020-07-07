@@ -1,15 +1,21 @@
 .btn_click {
 	display: inline-block;
-	padding: 20px 30px;
+	padding: 0 30px;
 	background: #f4443f;
 	border-radius: 25px;
 	color: #fff;
 	font-weight: 600;
 	font-size: 14px;
+	line-height: 50px;
 	text-align: center;
+	height: 50px;
+   box-sizing: border-box;
+   border: none;
+	cursor: pointer;
+	outline: none;
 	transition: all 200ms ease-in-out;
 	&:hover {
-		background: #FF9646;
+		opacity: 0.8;
 		transition: all 200ms ease-in-out;
 	}
 }
@@ -28,14 +34,6 @@
 	&:hover {
 		background: #fff;
 		color: #f4443f;
-		transition: all 200ms ease-in-out;
-	}
-}
-
-.btn_click, .submit {
-	transition: all 200ms ease-in-out;
-	&:hover {
-		background: #202020 !important;
 		transition: all 200ms ease-in-out;
 	}
 }
