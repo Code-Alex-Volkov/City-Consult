@@ -462,7 +462,6 @@ header.header {
 		display: flex;
 		justify-content: space-between;
 		position: relative;
-		z-index: 2;
 		.left_company {
 			width: 42%;
 			.title {
@@ -488,8 +487,39 @@ header.header {
 		}
 		.right_company {
 			width: 50%;
+			position: relative;
+			z-index: 10;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 50px;
+				left: -75px;
+				display: block;
+				width: 150px;
+				height: 33px;
+				background-color: #fff;
+				z-index: 10;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 115px;
+				right: -110px;
+				display: block;
+				width: 200px;
+				height: 33px;
+				background-color: #f4443f;
+			}
 			img {
+				width: 730px;
+				height: 550px;
+				object-fit: cover;
 				background-size: cover;
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				-ms-filter: grayscale(100%);
+				-o-filter: grayscale(100%);
+				filter: grayscale(100%);
 			}
 		}
 	}
@@ -908,17 +938,32 @@ header.header {
 		justify-content: space-between;
 		.left_block {
 			width: 50%;
-			img {
-				margin-left: -343px;
-				-webkit-filter: grayscale(100%);
-				-moz-filter: grayscale(100%);
-				-ms-filter: grayscale(100%);
-				-o-filter: grayscale(100%);
-				filter: grayscale(100%);
-				opacity: 1;
-				background: rgba(120,117,134, 0.25);
+			position: relative;
+			z-index: 10;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 130px;
+				right: -48px;
+				display: block;
+				width: 95px;
+				height: 33px;
+				background-color: #fff;
+				z-index: 10;
 			}
-			
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 75px;
+				left: -110px;
+				display: block;
+				width: 200px;
+				height: 33px;
+				background-color: #f4443f;
+			}
+			.img_bg {
+				margin-left: -110px;
+			}
 		}
 		.right_block {
 			width: 41%;
@@ -943,14 +988,13 @@ header.header {
 						display: flex;
 						flex-direction: column;
 						width: 48.5%;
-						input[type="text"], input[type="tel"] {
+						input[type="text"], input[type="tel"], input[type="mail"] {
 							background: transparent;
 							border: none;
 							border-bottom: 2px solid #fff;
 							color: #fff;
 							font-size: 14px;
-							line-height: 28px;
-							padding: 5px 0;
+							padding: 15px 0;
 							width: 100%;
 							box-sizing: border-box;
 							transition: all 300ms ease-in-out;
@@ -977,20 +1021,20 @@ header.header {
 						}
 					}
 				}
-				.textarea_box {
+				.textarea_box, .input_box_e-mail {
 					display: flex;
 					flex-direction: column;
 					margin-bottom: 40px;
 
-					textarea.textarea_message {
+
+					.textarea_message, .input_e-mail {
 						resize: none;
 					   background: transparent;
 					   border: none;
 						border-bottom: 2px solid #fff;
 						color: #fff;
 						font-size: 14px;
-						height: 30px;
-						padding: 5px 0;
+						padding: 15px 0;
 						width: 100%;
 						box-sizing: border-box;
 						transition: all 300ms ease-in-out;
@@ -998,6 +1042,26 @@ header.header {
 							outline: none;
 							transition: all 300ms ease-in-out;
 						}
+						&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+							color: #fff;
+							font-size: 14px;
+						}
+						&::-moz-placeholder { /* Firefox 19+ */
+						  	color: #fff;
+						  	font-size: 14px;
+						}
+						&:-ms-input-placeholder { /* IE 10+ */
+						  	color: #fff;
+						  	font-size: 14px;
+						}
+						&:-moz-placeholder { /* Firefox 18- */
+						  	color: #fff;
+						  	font-size: 14px;
+						}
+					}
+					.textarea_message {
+						padding: 0;
+						font-size: 16px;
 						&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 							color: #fff;
 							font-size: 16px;
