@@ -5,7 +5,10 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/main.min.css">
+	<link rel="stylesheet" href="assets/styles/main.min.css">
+	<link rel="stylesheet" href="assets/styles/style.css">
+	<link rel="stylesheet" href="assets/styles/styles.css">
+	<script src="assets/scripts/modernizr.js"></script>
     <title>City Consult</title>
 </head>
 <body>
@@ -20,8 +23,9 @@
 					<ul>
 						<li><a href="about.html">О компании</a></li>
 						<li><a href="recommendations.html">Рекомендации</a></li>
-						<li><a href="#">Статьи</a></li>
+						<li><a href="blog.html">Статьи</a></li>
 						<li><a href="contacts.html">Контакты</a></li>
+						<li><a href="sales.html">Sales</a></li>
 					</ul>
 				</nav>
 				<div class="phone">
@@ -77,81 +81,119 @@
 			<div class="top_blog_news">
 				<h2 class="title">Статьи</h2>
 			</div>
-			<div class="section_blog_news">
-				<div class="section_news">
-					<div class="new new_1">
-						<div class="mask_new"></div>
-						<img src="assets/img/news/1.png" alt="#">
-						
-						<div class="info_new">
-							<span class="data">22.02.2020</span>
-							<a href="#" class="title_new">Краудлендинг это быстро и технологично</a>
-							<span class="description">Новые виды кредитования стали темой диалога международном стратегическом форуме IPQuorum 2019</span>
-						</div>
-					</div>
-					<div class="new new_2">
-						<img src="assets/img/news/2.png" alt="#">
-						<div class="info_new">
-							<span class="data">23.02.2020</span>
-							<a href="#" class="title_new">Как найти инвестора для бизнеса</a>
-							<span class="description">Где найти инвестора в действующий бизнес или для нового проекта? Первое, что приходит на ум, это банк. </span>
-						</div>
-					</div>
-					<div class="new new_3">
-						<div class="mask_new"></div>
-						<img src="assets/img/news/4.png" alt="#">
-						
-						<div class="info_new">
-							<span class="data">25.02.2020</span>
-							<a href="#" class="title_new">Частные кредиты бизнесу</a>
-							<span class="description">На рынке кредитования активизировались альтернативные игроки без лицензий. На рынок классического банковского</span>
-						</div>
-					</div>
-					<div class="new new_4">
-						<img src="assets/img/news/3.png" alt="#">
-						<div class="info_new">
-							<span class="data">24.02.2020</span>
-							<a href="#" class="title_new">Краудлендинг это быстро и технологично</a>
-							<span class="description">Новые виды кредитования стали темой диалога международном стратегическом форуме IPQuorum 2019</span>
-						</div>
-					</div>
-					<div class="new new_5">
-						<div class="mask_new"></div>
-						<img src="assets/img/news/1.png" alt="#">
-						
-						<div class="info_new">
-							<span class="data">22.02.2020</span>
-							<a href="#" class="title_new">Краудлендинг это быстро и технологично</a>
-							<span class="description">Новые виды кредитования стали темой диалога международном стратегическом форуме IPQuorum 2019</span>
-						</div>
-					</div>
-					<div class="new new_6">
-						<img src="assets/img/news/2.png" alt="#">
-						<div class="info_new">
-							<span class="data">23.02.2020</span>
-							<a href="#" class="title_new">Как найти инвестора для бизнеса</a>
-							<span class="description">Где найти инвестора в действующий бизнес или для нового проекта? Первое, что приходит на ум, это банк. </span>
-						</div>
-					</div>
-					<div class="new new_7">
-						<div class="mask_new"></div>
-						<img src="assets/img/news/4.png" alt="#">
-						
-						<div class="info_new">
-							<span class="data">25.02.2020</span>
-							<a href="#" class="title_new">Частные кредиты бизнесу</a>
-							<span class="description">На рынке кредитования активизировались альтернативные игроки без лицензий. На рынок классического банковского</span>
-						</div>
-					</div>
-					<div class="new new_8">
-						<img src="assets/img/news/3.png" alt="#">
-						<div class="info_new">
-							<span class="data">24.02.2020</span>
-							<a href="#" class="title_new">Краудлендинг это быстро и технологично</a>
-							<span class="description">Новые виды кредитования стали темой диалога международном стратегическом форуме IPQuorum 2019</span>
-						</div>
-					</div>
+			<div class="section_blog_news cd-gallery-container">
+				<nav class="cd-filter">
+					<ul>
+						<li class="placeholder"> 
+							<a data-type="red" href="#0">Все</a> <!-- selected option on mobile -->
+						</li> 
+		
+						<li>
+							<a class="selected active" data-type="1" href="#0">Все</a>
+						</li>
+		
+						<li>
+							<a data-type="2" href="#0">Коронавирус</a>
+						</li>
+		
+						<li>
+							<a data-type="3" href="#0">Кейсы проектов</a>
+						</li>
+
+						<li>
+							<a data-type="2" href="#0">Наши решения</a>
+						</li>
+
+						<li>
+							<a data-type="2" href="#0">Знания экспертов</a>
+						</li>
+
+						<li>
+							<a data-type="2" href="#0">Полезно знать</a>
+						</li>
+
+					</ul>
+				</nav>
+				<div class="section_news cd-gallery cd-container">
+					<ul class="cd-item-wrapper">
+						<li class="is-visible new">
+							<div class="new_bg" style="background: url(assets/img/v3/1.jpg) no-repeat center; "></div>
+							<div class="info_new">
+								<span class="data">1.02.2020</span>
+								<a href="#" class="title_new">Краудлендинг это быстро и технологично</a>
+								<span class="description">Новые виды кредитования стали темой диалога международном стратегическом форуме IPQuorum 2019</span>
+							</div>
+						</li>
+						<li class="is-visible new">
+							<div class="new_bg" style="background: url(assets/img/v3/1.jpg) no-repeat center; "></div>
+							<div class="info_new">
+								<span class="data">2.02.2020</span>
+								<a href="#" class="title_new">Как найти инвестора для бизнеса</a>
+								<span class="description">Где найти инвестора в действующий бизнес или для нового проекта? Первое, что приходит на ум, это банк. </span>
+							</div>
+						</li>
+						<li class="is-visible new">
+							<div class="info_new">
+								<span class="data">3.02.2020</span>
+								<a href="#" class="title_new">Частные кредиты бизнесу</a>
+								<span class="description">На рынке кредитования активизировались альтернативные игроки без лицензий. На рынок классического банковского</span>
+							</div>
+						</li>
+						<li class="is-visible new">
+							<div class="info_new">
+								<span class="data">4.02.2020</span>
+								<a href="#" class="title_new">Краудлендинг это быстро и технологично</a>
+								<span class="description">Новые виды кредитования стали темой диалога международном стратегическом форуме IPQuorum 2019</span>
+							</div>
+						</li>
+						<li class="is-visible new">
+							<div class="new_bg" style="background: url(assets/img/news/1.png) no-repeat center; "></div>
+							<div class="info_new">
+								<span class="data">5.02.2020</span>
+								<a href="#" class="title_new">Краудлендинг это быстро и технологично</a>
+								<span class="description">Новые виды кредитования стали темой диалога международном стратегическом форуме IPQuorum 2019</span>
+							</div>
+						</li>
+						<li class="is-visible new">
+							<div class="new_bg" style="background: url(assets/img/v3/3.jpg) no-repeat center; "></div>
+							<div class="info_new">
+								<span class="data">6.02.2020</span>
+								<a href="#" class="title_new">Как найти инвестора для бизнеса</a>
+								<span class="description">Где найти инвестора в действующий бизнес или для нового проекта? Первое, что приходит на ум, это банк. </span>
+							</div>
+						</li>
+						<li class="is-visible new">
+							<div class="new_bg" style="background: url(assets/img/v3/3.jpg) no-repeat center; "></div>
+							<div class="info_new">
+								<span class="data">7.02.2020</span>
+								<a href="#" class="title_new">Частные кредиты бизнесу</a>
+								<span class="description">На рынке кредитования активизировались альтернативные игроки без лицензий. На рынок классического банковского</span>
+							</div>
+						</li>
+						<li class="is-visible new">
+							<div class="new_bg" style="background: url(assets/img/v3/2.png) no-repeat center; "></div>
+							<div class="info_new">
+								<span class="data">8.02.2020</span>
+								<a href="#" class="title_new">Краудлендинг это быстро и технологично</a>
+								<span class="description">Новые виды кредитования стали темой диалога международном стратегическом форуме IPQuorum 2019</span>
+							</div>
+						</li>
+					</ul>
+					
 				</div>
+				<nav class="navigation pagination">
+					<div class="nav-links">
+						<a class="prev page-numbers" href="#">Назад</a>
+
+						<span class="page-numbers current">1</span>
+						<a class="page-numbers" href="#">2</a>
+						<span class="page-numbers dots">…</span>
+						<a class="page-numbers" href="#">5</a>
+						<a class="page-numbers" href="#">6</a>
+
+						<a class="next page-numbers" href="#">Далее</a>
+					</div>
+				</nav>
 			</div>
 			
 		</div>
